@@ -1,7 +1,15 @@
-Embedly Service Provider [![Build Status](https://travis-ci.org/EmanueleMinotto/EmbedlyServiceProvider.svg)](https://travis-ci.org/EmanueleMinotto/EmbedlyServiceProvider)
-====================
+Embedly Service Provider
+========================
+
+[![Build Status](https://img.shields.io/travis/EmanueleMinotto/EmbedlyServiceProvider.svg?style=flat)](https://travis-ci.org/EmanueleMinotto/EmbedlyServiceProvider)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/95a26db2-bd04-4c3c-b3e5-37cab79fa6b7.svg?style=flat)](https://insight.sensiolabs.com/projects/95a26db2-bd04-4c3c-b3e5-37cab79fa6b7)
+[![Coverage Status](https://img.shields.io/coveralls/EmanueleMinotto/EmbedlyServiceProvider.svg?style=flat)](https://coveralls.io/r/EmanueleMinotto/EmbedlyServiceProvider)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/EmanueleMinotto/EmbedlyServiceProvider.svg?style=flat)](https://scrutinizer-ci.com/g/EmanueleMinotto/EmbedlyServiceProvider/)
+[![Total Downloads](https://img.shields.io/packagist/dt/emanueleminotto/embedly-service-provider.svg?style=flat)](https://packagist.org/packages/emanueleminotto/embedly-service-provider)
 
 An [embed.ly](http://embed.ly) service provider for [Silex](http://silex.sensiolabs.org/).
+
+API: [emanueleminotto.github.io/EmbedlyServiceProvider](http://emanueleminotto.github.io/EmbedlyServiceProvider/)
 
 ## Install
 Install Silex using [Composer](http://getcomposer.org/).

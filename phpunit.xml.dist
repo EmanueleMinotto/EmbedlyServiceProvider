@@ -9,4 +9,13 @@
         <env name="api_key" value=""/>
         <env name="url" value="http://embed.ly/"/>
     </php>
+    <filter>
+        <whitelist>
+            <directory>./</directory>
+            <exclude>
+                <directory>./Tests</directory>
+                <directory>./vendor</directory>
+            </exclude>
+        </whitelist>
+    </filter>
 </phpunit>
