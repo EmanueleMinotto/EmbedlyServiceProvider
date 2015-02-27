@@ -17,11 +17,15 @@ use Silex\ServiceProviderInterface;
 class EmbedlyServiceProvider implements ServiceProviderInterface
 {
     /**
-     * {@inheritdoc}
+     * Registers services and parameters on the app.
+     *
+     * @param Application $app Silex application.
+     *
+     * @return void
      */
     public function register(Application $app)
     {
-        $app['embedly'] = $app->share(function ($app) {
+        $app['embedly'] = $app->share(function () {
             return new Client();
         });
 
@@ -30,7 +34,11 @@ class EmbedlyServiceProvider implements ServiceProviderInterface
     }
 
     /**
-     * {@inheritdoc}
+     * Bootstraps the services.
+     *
+     * @param Application $app Silex application.
+     *
+     * @return void
      */
     public function boot(Application $app)
     {
