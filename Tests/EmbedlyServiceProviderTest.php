@@ -60,9 +60,9 @@ class EmbedlyServiceProviderTest extends PHPUnit_Framework_TestCase
     {
         $app = new Application();
         $app->register(new TwigServiceProvider());
-        $app->register(new EmbedlyServiceProvider(), array(
+        $app->register(new EmbedlyServiceProvider(), [
             'embedly.twig' => false,
-        ));
+        ]);
         $app->boot();
 
         $this->assertFalse($app['twig']->hasExtension('emanueleminotto_embedly_twigextension'));
@@ -120,9 +120,9 @@ class EmbedlyServiceProviderTest extends PHPUnit_Framework_TestCase
     private function createTestRequestResponse()
     {
         $app = new Application();
-        $app->register(new EmbedlyServiceProvider(), array(
+        $app->register(new EmbedlyServiceProvider(), [
             'embedly.api_key' => $_ENV['api_key'],
-        ));
+        ]);
 
         $app->get('/', function () use ($app) {
             $data = $app['embedly']->oembed([
@@ -131,7 +131,6 @@ class EmbedlyServiceProviderTest extends PHPUnit_Framework_TestCase
 
             return $app->json($data);
         });
-
 
         $request = Request::create('/');
         $response = $app->handle($request);
